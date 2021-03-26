@@ -7,7 +7,7 @@ function App() {
     <div>
     	<Router>
     		<Switch>
-      			<Route path="/1" component={ OrderProcessPage } />
+      			<Route path="/" component={ OrderProcessPage } />
       		</Switch>
       	</Router>
     </div>

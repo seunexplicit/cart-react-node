@@ -22,6 +22,6 @@ function TotalCost(props){
 	}
 
 	return(
-		<p className="h2">{ totalValue }</p>
+		<span>{ totalValue }</span>
 	)
 }

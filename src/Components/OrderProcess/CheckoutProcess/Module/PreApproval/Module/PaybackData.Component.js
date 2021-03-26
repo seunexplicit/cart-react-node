@@ -137,16 +137,16 @@ export const PayBackComponent = (props)=>{
 				<div className="flex-row w-60">
 					<div className="flex-row out-sec">
 						<div className="flex-col w-50">
-							<label htmlFor="shoppingCredit">Shopping Credit</label>
-							<label htmlFor="downPayment">Down Payment</label>
-							<label htmlFor="monthInstalment">Monthly Installment</label>
-							<label htmlFor="tenure">Tenure</label>
+							<label htmlFor="shoppingCredit" className="red">Shopping Credit</label>
+							<label htmlFor="downPayment" className="red">Down Payment</label>
+							<label htmlFor="monthInstalment" className="red">Monthly Installment</label>
+							<label htmlFor="tenure" className="red">Tenure</label>
 						</div>
 						<div className="w-50">
-							<label className="h2">{state.shoppingCredit?state.shoppingCredit:''}</label>
-							<label className="h2">{state.downPayment?state.downPayment:''}</label>
-							<label className="h2">{state.monthRepayment?state.monthRepayment:''}</label>
-							<label className="h2">{state.activePlan} Month{state.activePlan>1?'s':''}</label>
+							<label className="h2 red ml-1" id="shoppingCredit">{state.shoppingCredit?state.shoppingCredit:''}</label>
+							<label className="h2 red ml-1" id="downPayment">{state.downPayment?state.downPayment:''}</label>
+							<label className="h2 red ml-1" id="monthInstalment">{state.monthRepayment?state.monthRepayment:''}</label>
+							<label className="h2 red ml-1" id="tenure">{state.activePlan} Month{state.activePlan>1?'s':''}</label>
 						</div>
 					</div>
 				</div>
@@ -159,7 +159,7 @@ export const PayBackComponent = (props)=>{
 								onChange={e=>dispatch({action:'updatePassiveDownPayment', payload:e.target.value})} />
 						</div>
 					</div>
-					<div className="flex-row center-justify center-align">
+					<div className="flex-row center-justify center-align mt-3">
 						<button className="oval white white-bdr" onClick={()=>dispatch({action:'updateRepayment'})}>Update Breakdown</button>
 					</div> 
 				</div>

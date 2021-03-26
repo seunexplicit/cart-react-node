@@ -33,18 +33,12 @@ export const PreApproval = (props)=>{
 	const location = useLocation();
 	const history = useHistory();
 	
-	function backTrackRoute(){
-		if(location.pathname.charAt(1)<2){}
-		else{
-			history.goBack();
-		}
-	}
 
 	return(
 		<div className="order-process">
 			<div className="flex-row center-align navigate-indicator">
 				<div className="flex-row center-justify center-align">
-					<img onClick={ backTrackRoute() } alt="go back" src={imageUrl+'backicon.png'}/>
+					<img onClick={()=>backTrackRoute() } alt="go back" src={imageUrl+'backicon.png'}/>
 				</div>
 				<div className="flex-row center-justify">
 					<div className="flex-row center-justify center-align">
@@ -61,13 +55,24 @@ export const PreApproval = (props)=>{
 			<div>
 				<Router>
 					<Switch>
-						<Route path='/1' component={ PayBackComp } />
-						<Route path='/2' component={ CustomerDataComp } />
+						<Route path='/2' exact component={ CustomerDataComp } />
+						<Route path='/1' exact component={ PayBackComp } />
 					</Switch>
 				</Router>
 			</div>
+			<div className="flex-row center-align center-justify mt-5">
+				<button className="white-bg red oval red-bdr con-butt">Continue</button>
+			</div>
 		</div>
 	)
+
+	function backTrackRoute(){
+		console.log(location, 'location');
+		if(location.pathname.charAt(1)<2){}
+		else{
+			history.goBack();
+		}
+	}
 }
 
 
