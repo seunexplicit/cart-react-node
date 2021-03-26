@@ -5,11 +5,8 @@ import { OrderListTab } from './CartSummary';
 
 import './style.css';
 
-<<<<<<< HEAD
 const imgsrc = '../../images/';
-=======
-const imgsrc = '../../public/images/';
->>>>>>> origin/main
+
 
 export class OrderProcessPage  extends React.Component{
 
@@ -19,7 +16,6 @@ export class OrderProcessPage  extends React.Component{
 				<div className="flex-col w-25" id="BannerTab">
 					<div className="flex-col">
 						<div>
-<<<<<<< HEAD
 							<Link className="flex-row center-align nav-item w-fc">
 								<img alt="back to store" className="sm-icon mr-1" src={imgsrc+'back-arrow-white.png'}/>
 								<p className="white">Back To Store</p>
@@ -27,15 +23,6 @@ export class OrderProcessPage  extends React.Component{
 						</div>
 						<div className="flex-row center-justify w-100">
 							<img className="w-80 auto-h" src={imgsrc+'payqart-logo.png'} alt="paqart store center, you shop we pay"/>
-=======
-							<Link className="flex-row">
-								<img alt="back to store" src={imgsrc+'backarrowwhite.png'}/>
-								<p>Back To Store</p>
-							</Link>
-						</div>
-						<div className="flex-row center-justify">
-							<img src={imgsrc+'payqartlogo.png'} alt="paqart store center, you shop we pay"/>
->>>>>>> origin/main
 						</div>
 						<div>
 							<ul className="white">

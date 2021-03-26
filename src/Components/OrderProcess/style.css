@@ -1,14 +1,9 @@
 #BannerTab, #OrderListTab, #PreApprovalTab, #OrderProcessPage{ min-height:100% }
 
-<<<<<<< HEAD
+
 #BannerTab{ background:#902323 url('../../images/side-banner-2.jpg') 0 0/cover no-repeat; }
 #BannerTab>div{ padding: 50px 25px; height: calc(100% - 130px);  justify-content: space-between; }
 #BannerTab .nav-item{ padding: 1px 10px; box-shadow: 2px 2px 5px rgba(0,0,0, 0.4); border-radius: 20px; text-decoration: none !important;  }
-=======
-#BannerTab{ background:#902323; }
-#BannerTab>div{ padding: 50px 25px; height: calc(100% - 130px);  justify-content: space-between; }
->>>>>>> origin/main
-
 
 
 
@@ -43,12 +38,8 @@
 .br-dw-sec{ box-shadow:2px 2px 6px rgba(0,0,0, 0.2); border-radius: 10px;  }
 .out-sec{ padding: 30px 20px; width: calc(100% - 40px); }
 .out-sec>div:first-child{ border-right: 2px solid #902323; }
-<<<<<<< HEAD
 .out-sec>div>div{ height:25px; }
 .out-sec label{ font-size: 13px; }
-=======
-.out-sec label{ font-size: 13px; margin-bottom: 7px; }
->>>>>>> origin/main
 .form-col{ padding-top:20px; padding-bottom: 20px; justify-content: space-between; background-image: linear-gradient(45deg, rgb(60%, 15%, 15%), rgb(90%, 43%, 43%));  border-radius: 10px; }
 .form-col .form-icon-div>input{ width: 120px;  }
 .form-col .form-icon-div span{  }
@@ -59,12 +50,8 @@
 .cart-summary{ padding:50px 25px; background-color:rgb(95%, 95%, 95%); min-height: calc(100% - 100px); }
 .cart-title, .cart-sum-list{ margin-bottom: 20px; }
 .cart-sum-list{ box-shadow: 3px 4px 7px rgba(0,0,0, 0.2); padding: 20px 15px; background-color:white;  }
-<<<<<<< HEAD
 .cart-sum-img{ width:60px; padding: 5px; height:fit-content; box-shadow: 3px 4px 7px rgba(0,0,0, 0.2); border-radius: 10px; margin-right: 10px; }
 .cart-sum-img img{ height: auto; }
-=======
-.cart-sum-img{ width:60px; height:80px; box-shadow: 3px 4px 7px rgba(0,0,0, 0.2); border-radius: 10px; margin-right: 10px; }
->>>>>>> origin/main
 
 .cart-value{ padding:0px 15px; box-shadow: 3px 4px 7px rgba(0,0,0, 0.2); border-radius: 10px; background-color:white; }
 .cart-value>div{ justify-content: space-between; width: 100%;   }
