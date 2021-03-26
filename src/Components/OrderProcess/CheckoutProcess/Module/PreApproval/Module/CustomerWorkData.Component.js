@@ -3,6 +3,7 @@ import React, { Fragment, useState } from 'react';
 const workType = [
 	{
 		type:'Paid Employment',
+<<<<<<< HEAD
 		imageUrl:'employed.jpg'
 	},
 	{
@@ -16,6 +17,21 @@ const workType = [
 ]
 
 const imgRelLink = '../../../../../../images/';
+=======
+		imageUrl:'paidemployment'
+	},
+	{
+		type:'Self Employed / Freelance',
+		imageUrl:'selfemployed'
+	},
+	{
+		type:'Corporate Organization',
+		imageUrl:'corporateorganization'
+	}
+]
+
+const imgRelLink = '../../../../../';
+>>>>>>> origin/main
 
 function CustomerWork({ data, updateData }){
 	return(
@@ -74,7 +90,11 @@ export const CustomerDataComponent = (props)=>{
 				<div className="flex-col center-align mb-2">
 					<label className="mb-1 red">When Is Your Last Salary Date?</label>
 					<div className="flex-row form-icon-div left-icon">
+<<<<<<< HEAD
 						<div className="white-bg"><img alt="last salary date" src={ imgRelLink+'calendar-brown.png' }/></div>
+=======
+						<div className="white-bg"><img alt="last salary date" src={ imgRelLink+'calendar-icon.png' }/></div>
+>>>>>>> origin/main
 						<input type="date" name="" placeholder="select pay date" onChange={e=>setData({...data, lastPayDate:e.target.value})}/>
 					</div>
 				</div>

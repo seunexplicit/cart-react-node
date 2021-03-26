@@ -1,6 +1,9 @@
 import React, { Fragment, useReducer, useContext } from 'react';
 import { CartContext } from '../../../../../../Hooks/Cart.Hook';
+<<<<<<< HEAD
 import Prompter from '../../../../../GlobalComponents/Prompter.Component.js';
+=======
+>>>>>>> origin/main
 
 const planTypes = [
 		{
@@ -51,7 +54,11 @@ function reducePayment(state){
 	const totalCredit = (rate*state.activePlan)+shoppingCredit;
 	return { ...state, 
 		shoppingCredit:shoppingCredit, 
+<<<<<<< HEAD
 		monthlyRepayment:Math.ceil(totalCredit/state.activePlan),
+=======
+		monthlyRepayment:totalCredit/state.activePlan,
+>>>>>>> origin/main
 		downPayment:downPayment }
 }
 
@@ -65,16 +72,23 @@ function reducer(state, action){
 
 	switch(action.type){
 		case 'updateRepayment':
+<<<<<<< HEAD
 			console.log('am here', reducePayment(state))
+=======
+>>>>>>> origin/main
 			return reducePayment(state); 
 		case 'updatePlan':
 			newState = reducePlan(state, action.payload);
 			return reducePayment(newState);
 		case 'updatePassiveDownPayment':
+<<<<<<< HEAD
 			console.log('updatePassiveDownPayment....');
 			return {...state, passiveDownPayment:action.payload}
 		case 'clearErrorMessage':
 			return {...state, errorMessage:''}
+=======
+			return {...state, passiveDownPayment:action.payload}
+>>>>>>> origin/main
 		default:
 			return state;
 	}
@@ -128,14 +142,21 @@ export const PayBackComponent = (props)=>{
 	const [state, dispatch ] = useReducer(reducer, init);
 
 	function changePaymentPlan(plan){
+<<<<<<< HEAD
 		dispatch({type:'updatePlan', payload:plan})
+=======
+		dispatch({action:'updatePlan', payload:plan})
+>>>>>>> origin/main
 	}
 	
 	return(
 		<div>
+<<<<<<< HEAD
 			<div>
 				{ state.errorMessage?<Prompter errorMessage={ state.errorMessage } closeMessage={ dispatch } />:null }
 			</div>
+=======
+>>>>>>> origin/main
 			<p className="h2 red flex-row center-justify mb-3">Choose Your Plan</p>
 			<div className="flex-row">
 				<PlansType active={ state.activePlan } changePlan={ changePaymentPlan }></PlansType>
@@ -145,6 +166,7 @@ export const PayBackComponent = (props)=>{
 				<div className="flex-row w-60">
 					<div className="flex-row out-sec">
 						<div className="flex-col w-50">
+<<<<<<< HEAD
 							<div><label htmlFor="shoppingCredit" className="red">Shopping Credit</label></div>
 							<div><label htmlFor="downPayment" className="red">Down Payment</label></div>
 							<div><label htmlFor="monthInstalment" className="red">Monthly Installment</label></div>
@@ -155,6 +177,18 @@ export const PayBackComponent = (props)=>{
 							<div><label className="h2 red ml-1" id="downPayment">{state.downPayment?'N'+state.downPayment:''}</label></div>
 							<div><label className="h2 red ml-1" id="monthInstalment">{state.monthlyRepayment?'N'+state.monthlyRepayment:''}</label></div>
 							<div><label className="h2 red ml-1" id="tenure">{state.activePlan} Month{state.activePlan>1?'s':''}</label></div>
+=======
+							<label htmlFor="shoppingCredit" className="red">Shopping Credit</label>
+							<label htmlFor="downPayment" className="red">Down Payment</label>
+							<label htmlFor="monthInstalment" className="red">Monthly Installment</label>
+							<label htmlFor="tenure" className="red">Tenure</label>
+						</div>
+						<div className="w-50">
+							<label className="h2 red ml-1" id="shoppingCredit">{state.shoppingCredit?state.shoppingCredit:''}</label>
+							<label className="h2 red ml-1" id="downPayment">{state.downPayment?state.downPayment:''}</label>
+							<label className="h2 red ml-1" id="monthInstalment">{state.monthRepayment?state.monthRepayment:''}</label>
+							<label className="h2 red ml-1" id="tenure">{state.activePlan} Month{state.activePlan>1?'s':''}</label>
+>>>>>>> origin/main
 						</div>
 					</div>
 				</div>
@@ -164,11 +198,19 @@ export const PayBackComponent = (props)=>{
 						<div className="flex-row form-icon-div left-icon">
 							<div className="red"><span className="naira">N</span></div>
 							<input id="downPayment" 
+<<<<<<< HEAD
 								onChange={e=>dispatch({type:'updatePassiveDownPayment', payload:e.target.value})} />
 						</div>
 					</div>
 					<div className="flex-row center-justify center-align mt-3">
 						<button className="oval white white-bdr" onClick={()=>dispatch({type:'updateRepayment'})}>Update Breakdown</button>
+=======
+								onChange={e=>dispatch({action:'updatePassiveDownPayment', payload:e.target.value})} />
+						</div>
+					</div>
+					<div className="flex-row center-justify center-align mt-3">
+						<button className="oval white white-bdr" onClick={()=>dispatch({action:'updateRepayment'})}>Update Breakdown</button>
+>>>>>>> origin/main
 					</div> 
 				</div>
 			</div>
