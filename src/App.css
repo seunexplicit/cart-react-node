@@ -70,5 +70,6 @@ button.white:hover{ background-color:white; color: #902323  }
 .prompts{ top:0; left:0; position: fixed; z-index:99; }
 .prompts.close{ display: none; }
 .prompts>div{ padding: 30px; max-width: 250px; background-color: white;  border-radius: 30px; box-shadow: 3px 4px 40px 2px rgba(0,0,0,0.1); }
-.prompts .close-button{ position: relative; top: 0px; right: 0px; margin-right: 10px; margin-top: 10px; }
+.prompts>div img:not(.close-button){ width: 80px; }
+.prompts .close-button{ position: absolute; margin-top: -15px; margin-left: 240px; }
 
