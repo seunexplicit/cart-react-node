@@ -10,7 +10,7 @@
 .order-process{ padding:50px 25px; width: calc(100% - 50px);  }
 .navigate-indicator{ margin-bottom: 60px; }
 .navigate-indicator>div:first-child{ width: 30px; height:15px; box-shadow: 2px 2px 5px rgba(0,0,0, 0.2); border-radius: 5px; }
-.navigate-indicator>div:first-child: img{ width: 25px; height:auto; }
+.navigate-indicator>div:first-child img{ width: 25px; height:auto; }
 .navigate-indicator>div:last-child{ width: calc(100% - 30px); }
 .ind-conn{ width: 40px; border-top: 1px solid red; border-bottom: 1px solid red; }
 .p-ind{ border-radius: 50%; height: 25px; color:white; width: 25px; background-color: rgb(70%, 70%, 70%); box-shadow: 2px 2px 4px rgba(0,0,0, 0.2); }
