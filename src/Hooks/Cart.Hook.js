@@ -1,27 +1,27 @@
-import React { useState, createContext } from 'react';
+import React, { useState, createContext } from 'react';
 
 export const CartContext  = createContext();
 
-export const CustomerProvider = ({ children })=>{
+export const CartProvider = ({ children })=>{
 
 	const [ cart ] = useState([
 			{
 				name:'Meeysoo P45 Pro',
 				quantity:2,
 				cost:45000,
-				imgsrc:'meeysoo.png'
+				imgsrc:'phone 2.jpg'
 			},
 			{
 				name:'Men\'s Long Sleeve Shirt',
 				quantity:3,
 				cost:12000,
-				imgsrc:'longsleeveshirt.png'
+				imgsrc:'mens shirt.jpg'
 			},
 			{
 				name:'MacBook 5 Pro',
 				quantity:1,
 				cost:230000,
-				imgsrc:'macbookpro.jpg'
+				imgsrc:'apple laptop.png'
 			}
 		]);
 	
