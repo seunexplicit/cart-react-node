@@ -52,7 +52,6 @@ function reducePayment(state){
 	return { ...state, 
 		shoppingCredit:shoppingCredit, 
 		monthlyRepayment:Math.ceil(totalCredit/state.activePlan),
-		monthlyRepayment:totalCredit/state.activePlan,
 		downPayment:downPayment }
 }
 
